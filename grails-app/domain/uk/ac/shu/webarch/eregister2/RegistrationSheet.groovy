@@ -1,12 +1,13 @@
 package uk.ac.shu.webarch.eregister2
 
-class Student {
+class RegistrationSheet {
 
-    String    fullStudentName 
-    String    studentNumber 
+    RegClass      regClass
 
-    static mappedBy = [classes: 'student']
+
+    static mappedBy = [classes: 'registrationSheet']
     static hasMany = [classes: RegisterEntry]
+
 
 
     static constraints = {
