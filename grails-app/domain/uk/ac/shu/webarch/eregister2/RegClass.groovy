@@ -7,8 +7,8 @@ class RegClass {
 
 	Date	  classDate	
 
-    static mappedBy = [classes: 'registrationSheet']
-    static hasMany = [classes: RegClass]
+    static mappedBy = [classes: 'regClass']
+    static hasMany = [classes: RegistrationSheet]
 
 
     static constraints = {
