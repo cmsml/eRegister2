@@ -11,6 +11,9 @@ class RegClass {
     static hasMany = [classes: RegistrationSheet]
 
 
+    //static mappedBy = [classes: 'regClass']
+    //static hasMany = [classes: Enrollment]
+
     static constraints = {
     }
 }

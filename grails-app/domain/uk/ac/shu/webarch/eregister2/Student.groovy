@@ -4,9 +4,13 @@ class Student {
 
     String    fullStudentName 
     String    studentNumber 
+    Long      heightInCm
+    Set       studentsRegistered
+    Set       studentEnrolled
 
-    static mappedBy = [classes: 'student']
-    static hasMany = [classes: RegisterEntry]
+
+    static mappedBy = [studentsRegistered: 'student', studentEnrolled: 'student' ]
+    static hasMany = [studentsRegistered: RegisterEntry, studentEnrolled: Enrollment ]
 
 
     static constraints = {
